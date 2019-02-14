@@ -12,3 +12,5 @@ python manage.py runserver
 You will now be able to see it in the browser. Completed when the screen appears at the following URL. Note that ports are 8000 by default.
 
 http://localhost:8000/memo/
+
+link hướng dẫn: https://viblo.asia/p/10-minutes-django-practical-tutorial-Ljy5VoN9Kra
