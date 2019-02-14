@@ -1,0 +1,14 @@
+<p>View : MemoDetailView</p>
+<p>Template : memo_detail.html</p>
+
+{% if memo %}
+  <ul>
+    <li>Primary Key Number : {{ memo.pk }}</li>
+    <li>Memo Text : {{ memo.text }}</li>
+  </ul>
+
+{% else %}
+<p>No memo available.</p>
+
+{% endif %}
+<a href = "/memo">index</a>

@@ -1,0 +1,18 @@
+<p>View : MemoListView</p>
+<p>Template : memo_list.html</p>
+
+{% if memo_list %}
+  <table>
+  {% for memo in memo_list %}
+    <tr>
+      <td><a href = "{% url 'memo_detail' memo.pk %}"> {{ memo.text }}</a></td>
+      <td><a href = "{% url 'memo_update' memo.pk %}">Edit</a></td>
+    </tr>
+  {% endfor %}
+  </table>
+
+{% else %}
+<p>No memo available.</p>
+
+{% endif %}
+<p><a href = 'memo_create'>Create a new memo.</a></p>
